@@ -33,4 +33,4 @@ class Node
 			m_data(data), m_prev(prev), m_next(next) {}
 };
 
-#endif;
+#endif //
