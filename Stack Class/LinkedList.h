@@ -31,7 +31,7 @@ class LinkedList
 		//  and all memory deallocated (via clear())
 		~LinkedList() { clear(); }
 
-		//Purpose: effectively "emptiesî the list
+		//Purpose: effectively "empties‚Äù the list
 		//Postconditions: current size set to 0, head and tail ptrs set to NULL,
 		//  and all dynamically allocated memory for nodes deallocated 
 		void clear();
@@ -60,7 +60,7 @@ class LinkedList
 		//Purpose: puts the data value x at the beginning of the list 
 		//Parameters: x is data value to inserted
 		//Postconditions: current size of list incremented by 1, head pointer
-		//  now points to a node with data value x, the new nodeís next ptr points
+		//  now points to a node with data value x, the new node‚Äôs next ptr points
 		//  to what was previously the first in the list, and its prev ptr points
 		//  to NULL; if x is the only value in the list, tail pointer also points
 		//  to the new node
@@ -69,7 +69,7 @@ class LinkedList
 		//Purpose: puts the data value x at the end of the list 
 		//Parameters: x is data value to inserted
 		//Postconditions: current size of list incremented by 1, tail pointer
-		//  now points to a node with data value x, the new nodeís prev ptr points
+		//  now points to a node with data value x, the new node‚Äôs prev ptr points
 		//  to what was previously the last in the list, and its next ptr points
 		//  to NULL; if x is the only value in the list, head pointer also points
 		//  to the new node
@@ -77,16 +77,16 @@ class LinkedList
 
 		//Purpose: removes the data value at the beginning of the list 
 		//Postconditions: current size of list decremented by 1, head pointer
-		//  now points to whatever the removed nodeís next ptr was pointing at, and
-		//  that nodeís prev ptr is NULL; if list is now empty, tail pointer 
+		//  now points to whatever the removed node‚Äôs next ptr was pointing at, and
+		//  that node‚Äôs prev ptr is NULL; if list is now empty, tail pointer 
 		//  is set to NULL
 		//Exceptions: if the list is empty, then throw std::length_error 
 		void removeAtHead();
 
 		//Purpose: removes the data value at the end of the list 
 		//Postconditions: current size of list decremented by 1, tail pointer
-		//  now points to whatever the removed nodeís prev ptr was pointing at, and
-		//  that nodeís next ptr is NULL; if list is now empty, head pointer 
+		//  now points to whatever the removed node‚Äôs prev ptr was pointing at, and
+		//  that node‚Äôs next ptr is NULL; if list is now empty, head pointer 
 		//  is set to NULL
 		//Exceptions: if the list is empty, then throw std::length_error 
 		void removeAtTail();
@@ -123,4 +123,4 @@ class LinkedList
 };
 
 #include "LinkedList.hpp"
-#endif;
+#endif //
