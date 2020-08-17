@@ -73,4 +73,4 @@ class Stack : private LinkedList<T>
 
 };
 #include "Stack.hpp"
-#endif;
+#endif //
