@@ -155,7 +155,7 @@ bool LinkedList<T>::removeFirstOccurrence(const T& x)
 				m_size--;
 				find_val = true;
 				temp->m_prev->m_next = temp->m_next;
-				temp->m_next - m_prev = temp->m_prev;
+				temp->m_next -> m_prev = temp->m_prev;
 				delete temp;
 			}
 			else
