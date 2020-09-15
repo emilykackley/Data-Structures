@@ -2,7 +2,7 @@
 *  Purpose: Class implementation for a binary search tree
 */
 
-#include <iostream>>
+#include <iostream>
 #include "binaryTree.h"
 #include "bst.h"
 #include <stdexcept>
