@@ -66,7 +66,7 @@ class BinaryTree
 		//  starting from the root
 		//Returns: a string that specifies each node's value and count, as the nodes would
 		//  be encountered in an inorder traversal of this tree
-		std::string toStringInorder() const {
+		std::string toStringInOrder() const {
 			std::string s = "";
 			toStringInorderStartingAtNode(s, m_root);
 			return(s);
