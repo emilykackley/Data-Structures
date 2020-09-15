@@ -27,8 +27,10 @@ class BNode {
 		//  ptrs, and count (respectively)
 		//Postconditions: data, left and right child ptrs, and count
 		//  are set to the specified (or default) values
-		BNode(const T& data, BNode<T>* leftLink = NULL, m_left(leftLink), m_right(m_right), m_data(data), m_count(num)) {}
-
+		BNode(const T& data, BNode<T> *leftLink = NULL, 
+		      BNode<T> *rightLink = NULL, const unsigned int num = 1):
+			m_left(leftLink), m_right(rightLink), m_data(data),
+			m_count(num) {}
 		//Purpose: determine whether or not this node is a leaf
 		//Returns: true if this node is a leaf; otherwise returns false
 		bool isLeaf()const {
