@@ -12,7 +12,7 @@ class BinaryTree
 {
 	protected:
 		BNode<T>* m_root; //root of tree
-		unsigned int m_size //number of nodes in tree
+		unsigned int m_size; //number of nodes in tree
 	public:
 		//Purpose: default constructor
 		//Postcondtions: root is set to NULL and size is set to 0
