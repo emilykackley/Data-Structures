@@ -146,7 +146,7 @@ void DirectedGraph<T,N>::bfs(const unsigned int start, int visited[]) const
     if(start>m_size)
         throw std::out_of_range("Out of range");
     for(int i=0; i<N; i++)
-        visited[i] =- 1;
+        visited[i] =-1;
     queue<int> q;
     visited[start]=0;
     q.push(start);
